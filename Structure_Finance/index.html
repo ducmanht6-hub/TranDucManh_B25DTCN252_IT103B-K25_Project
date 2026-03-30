@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quản Lý Tài Chính</title>
+        <link rel="stylesheet" href="../Structure_Finance/css/index.css">
+    </head>
+    <body>
+
+        <div class="sidebar">
+            <h3>Menu</h3>
+            <button class="active">Information</button>
+            <button>Category</button>
+            <button>History</button>
+        </div>
+
+        <div class="topbar">
+            <div>📊 Tài Chính Cá Nhân K24_Rikkei</div>
+            <div>Tài khoản ⌄</div>
+        </div>
+
+        <div class="main">
+
+            <div class="header">
+                <h2>🎯 Kiểm soát chi tiêu thông minh</h2>
+                <p>Theo dõi ngân sách và thu chi hàng tháng dễ dàng</p>
+            </div>
+
+            <h3 class="section-title">📊 Quản Lý Tài Chính Cá Nhân</h3>
+
+            <div class="card center">
+                <p>Số tiền còn lại</p>
+                <h2 id="balance">0 VND</h2>
+            </div>
+
+            <div class="card">
+                <span>📅 Chọn tháng:</span>
+                <input type="month">
+            </div>
+
+            <div class="card">
+                <span>💰 Ngân sách tháng:</span>
+                <input type="number" id="budget" placeholder="VD: 5000000">
+                <button onclick="saveBudget()">Lưu</button>
+            </div>
+
+            <!-- Info -->
+            <h3 class="section-title">Quản Lý Thông tin cá nhân</h3>
+
+            <div class="form">
+                <div>
+                    <label>Name *</label>
+                    <input type="text" value="Nguyen Van A">
+                </div>
+
+                <div>
+                    <label>Email *</label>
+                    <input type="email" value="nguyenvana@gmail.com">
+                </div>
+
+                <div>
+                    <label>Phone *</label>
+                    <input type="text" value="0987654321">
+                </div>
+
+                <div>
+                    <label>Gender *</label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="outline">Change Information</button>
+                <button class="outline">Change Password</button>
+            </div>
+
+        </div>
+    </body>
+</html>
