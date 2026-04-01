@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tài Chính Cá Nhân</title>
+        <link rel="stylesheet" href="../css/category.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <body>
+
+            <div class="header">
+                <div class="logo">📒 Tài Chính Cá Nhân K24_Rikkei</div>
+                <div class="account">Tài khoản ▼</div>
+            </div>
+
+            <div class="sidebar">
+                <button> <i class="fa-solid fa-circle-info"></i></i>
+                Information</button>
+            <button class="active"> <i class="fa-solid fa-shapes"></i> Category</button>
+            <button> <i class="fa-solid fa-clock-rotate-left"></i>
+                History</button>
+        </div>
+
+        <div class="main">
+
+            <div class="banner">
+                🎯 Kiểm soát chi tiêu thông minh <br>
+                <div>
+                    <small>Theo dõi ngân sách và thu chi hằng tháng dễ
+                        dàng</small>
+                </div>
+            </div>
+
+            <h2>📊 Quản Lý Tài Chính Cá Nhân</h2>
+
+            <div class="card">
+                <p>Số tiền còn lại</p>
+                <h3 id="balance">0 VND</h3>
+            </div>
+
+            <div class="card">
+                <label>📅 Chọn tháng:</label>
+                <input type="month" id="month">
+            </div>
+            <div class="category-container">
+                <div class="category-header">
+                    <img
+                        src="../Assets/images/Heading 2 → 💼 Quản lý danh mục (theo tháng).png"
+                        alt><br>
+                </div>
+
+                <div class="category-form">
+                    <div class="select-wrapper">
+                        <select>
+                            <option value>Tên danh mục</option>
+                            <option>Tiền ăn</option>
+                            <option>Tiền điện</option>
+                            <option>Tiết kiệm</option>
+                        </select>
+                    </div>
+
+                    <input type="number" placeholder="Giới hạn (VND)" />
+                    <button>Thêm danh mục</button>
+                </div>
+
+                <div class="category-list">
+                    <div class="category-card">
+                        <div class="icon"><i
+                                class="fa-solid fa-dollar-sign"></i></div>
+                        <div class="info">
+                            <div class="name">Tiền tích lũy</div>
+                            <div class="amount">2.000 $</div>
+                        </div>
+                        <div class="actions">
+                            <i class="fa-solid fa-pencil"></i><br>
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="icon"><i
+                                class="fa-solid fa-dollar-sign"></i></div>
+                        <div class="info">
+                            <div class="name">Tiền tích lũy</div>
+                            <div class="amount">2.000 $</div>
+                        </div>
+                        <div class="actions">
+                            <i class="fa-solid fa-pencil"></i><br>
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="icon"><i
+                                class="fa-solid fa-dollar-sign"></i></div>
+                        <div class="info">
+                            <div class="name">Tiền tích lũy</div>
+                            <div class="amount">2.000 $</div>
+                        </div>
+                        <div class="actions">
+                            <i class="fa-solid fa-pencil"></i><br>
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="icon"><i
+                                class="fa-solid fa-dollar-sign"></i></div>
+                        <div class="info">
+                            <div class="name">Tiền tích lũy</div>
+                            <div class="amount">2.000 $</div>
+                        </div>
+                        <div class="actions">
+                            <i class="fa-solid fa-pencil"></i><br>
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="icon"><i
+                                class="fa-solid fa-dollar-sign"></i></div>
+                        <div class="info">
+                            <div class="name">Tiền tích lũy</div>
+                            <div class="amount">2.000 $</div>
+                        </div>
+                        <div class="actions">
+                            <i class="fa-solid fa-pencil"></i><br>
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="icon"><i
+                                class="fa-solid fa-dollar-sign"></i></div>
+                        <div class="info">
+                            <div class="name">Tiền tích lũy</div>
+                            <div class="amount">2.000 $</div>
+                        </div>
+                        <div class="actions">
+                            <i class="fa-solid fa-pencil"></i><br>
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="icon"><i
+                                class="fa-solid fa-dollar-sign"></i></div>
+                        <div class="info">
+                            <div class="name">Tiền tích lũy</div>
+                            <div class="amount">2.000 $</div>
+                        </div>
+                        <div class="actions">
+                            <i class="fa-solid fa-pencil"></i><br>
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </body>
+    </html>

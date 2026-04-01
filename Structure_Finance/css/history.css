@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f3f3;
+}
+
+.header {
+  background: #4f46e5;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sidebar {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  width: 160px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #333;
+  background: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar button i {
+  color: #333;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.sidebar button:hover {
+  color: #ffffff;
+  background-color: #4f46e5;
+}
+
+.sidebar button:hover i {
+  color: #ffffff;
+}
+
+.sidebar button.active {
+  background: #5b5ce2;
+  color: #fff;
+  border-color: #5b5ce2;
+}
+
+.sidebar button.active i {
+  color: #fff;
+}
+
+.main {
+  max-width: 700px;
+  margin: 80px auto;
+  text-align: center;
+  position: relative;
+}
+
+.main h2 {
+  color: #4f46e5;
+}
+
+.main h3 {
+  color: #22c55e;
+}
+
+.main .banner {
+  font-size: 24px;
+}
+
+.banner {
+  background: linear-gradient(to right, #5f5bff, #7a6fff);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card label {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.card input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.card button {
+  padding: 8px 15px;
+  margin-left: 10px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  opacity: 0.9;
+}
+
+.alert-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #3f4a66;
+  color: white;
+  padding: 18px 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  min-width: 320px;
+}
+
+.alert-icon {
+  font-size: 22px;
+  color: #ff8c00;
+}
+
+.alert-content h4 {
+  margin: 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.alert-content p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.form-card {
+  display: flex;
+  gap: 15px;
+}
+
+.form-card input{
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 174px;
+}
+.form-card select {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 141px;
+  background-color: #EFEFEF;
+}
+
+.btn-primary {
+  background: #5b5ce2;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.history-container {
+  width: 660px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.history-header .left {
+  font-weight: 600;
+}
+
+.history-header .right {
+  display: flex;
+  gap: 10px;
+}
+
+.sort-btn {
+  background: #eee;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-btn {
+  background: #5b4df7;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.history-header input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #f1f2f6;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th {
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.history-table td {
+  padding: 10px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  text-align: left;
+}
+
+.history-table tbody tr:hover {
+  background: #f9fafc;
+}
+
+.history-table td:last-child {
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: right;
+  margin-top: 15px;
+  gap: 5px;
+}
+
+.pagination button {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background: #5b4df7;
+  color: white;
+  border: none;
+}
