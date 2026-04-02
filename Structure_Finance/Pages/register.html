@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="../css/register.css">
+    </head>
+    <body>
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+            <p id="successMessage" class="success"></p>
+            <form id="registerForm" novalidate>
+                <input type="email" placeholder="Email here ..." required>
+                <span class="error" id="emailError"></span>
+                <input type="password" placeholder="Password here ..." required>
+                <span class="error" id="passwordError"></span>
+                <input type="password" placeholder="Confirm password here ..."
+                    required>
+                <span class="error" id="confirmError"></span>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>You have account? <a href="./login.html">Sign in</a></p>
+            <script src="../js/register.js"></script>
+        </div>
+    </body>
+</html>
